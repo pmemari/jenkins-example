@@ -6,6 +6,7 @@ pipeline {
 
             steps {
                 echo "compile stage completed successfully"
+                echo " yeah"
             }
         }
 
