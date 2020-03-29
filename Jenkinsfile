@@ -5,25 +5,23 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn clean install'
-                }
+                echo "compile stage completed successfully"
             }
         }
 
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn test'
+                echo "testing stage completed successfully"
                 }
-            }
+           
         }
 
-        stage('Generate HTML report') {
-            steps {
-                echo "Generate HTML report stage completed successfully"
 
+        stage ('Deployment Stage') {
+            steps {
+                echo "deployment stage completed successfully"
+            }
         }
     }
 }
