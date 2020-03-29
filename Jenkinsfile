@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo "testing stage completed successfully"
                 }
-            }
+           
         }
 
 
@@ -24,4 +24,3 @@ pipeline {
             }
         }
     }
-}
