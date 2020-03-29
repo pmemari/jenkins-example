@@ -12,7 +12,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                echo "testing stage completed successfully"'
+                echo "testing stage completed successfully"
                 }
             }
         }
